@@ -44,7 +44,7 @@ class ModelExplorerMP:
         print("i am outside of the main function.")
         print('Name is set to {}'.format(__name__))
         for i in range(num_cycles):
-            if __name__ == '__main__':
+            if __name__ == 'mesaModelAssistant.ModelExplorerMP':
                 print("i got to the main function.")
                 pool = multiprocessing.Pool()
                 pool = multiprocessing.Pool(processes=self.num_cores)
