@@ -10,7 +10,6 @@ setup(
     install_requires=['numpy',
                         'pandas',
                         'multiprocessing',
-                        'itertools',
                         'mesa'
                     ],
     url="https://github.com/nikita-sivakumar/mesa-model-assistant.git",
