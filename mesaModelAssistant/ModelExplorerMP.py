@@ -41,6 +41,7 @@ class ModelExplorerMP:
         index_1 = 0
         index_2 = self.num_cores
         outputs_all = []
+        print("i am outside of the main function.")
         for i in range(num_cycles):
             if __name__ == '__main__':
                 print("i to the main function.")
