@@ -28,7 +28,7 @@ class ModelExplorerMP:
     def schedule_run_all_param_combinations(self):
         # define all parameter combinations for which the model must be run.
         parameter_combinations = self.generate_run_matrix()
-        print(parameter_combinations)
+        # print(parameter_combinations)
         
         # determine how many times parallelization of cores must be repeated to complete runs
         total_runs = len(parameter_combinations)
@@ -41,11 +41,11 @@ class ModelExplorerMP:
         index_1 = 0
         index_2 = self.num_cores
         outputs_all = []
-        print("i am outside of the main function.")
-        print('Name is set to {}'.format(__name__))
+        # print("i am outside of the main function.")
+        # print('Name is set to {}'.format(__name__))
         for i in range(num_cycles):
             if __name__ == 'mesaModelAssistant.ModelExplorerMP':
-                print("i got to the main function.")
+                # print("i got to the main function.")
                 pool = multiprocessing.Pool()
                 pool = multiprocessing.Pool(processes=self.num_cores)
                 inputs = parameter_combinations[index_1:index_2]
