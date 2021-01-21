@@ -9,7 +9,7 @@ setup(
     long_description=open('README.md').read(),
     install_requires=['numpy',
                         'pandas',
-                        'multiprocessing',
+                        # 'multiprocessing',
                         'mesa'
                     ],
     url="https://github.com/nikita-sivakumar/mesa-model-assistant.git",
