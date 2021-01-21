@@ -44,7 +44,7 @@ class ModelExplorerMP:
         print("i am outside of the main function.")
         for i in range(num_cycles):
             if __name__ == '__main__':
-                print("i to the main function.")
+                print("i got to the main function.")
                 pool = multiprocessing.Pool()
                 pool = multiprocessing.Pool(processes=self.num_cores)
                 inputs = parameter_combinations[index_1:index_2]

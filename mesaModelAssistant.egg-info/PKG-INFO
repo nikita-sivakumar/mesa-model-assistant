@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: mesaModelAssistant
-Version: 0.1
+Version: 0.0.2
 Summary: A package containing helper classes for batchruning agent-based models implemented in mesa.
 Home-page: https://github.com/nikita-sivakumar/mesa-model-assistant.git
 Author: Nikita Sivakumar
