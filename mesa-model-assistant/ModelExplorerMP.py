@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import multiprocessing
-import time
 from itertools import product
 
 from mesa import Agent, Model
