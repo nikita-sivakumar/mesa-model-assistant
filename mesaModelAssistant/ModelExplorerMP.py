@@ -28,7 +28,7 @@ class ModelExplorerMP:
     def schedule_run_all_param_combinations(self):
         # define all parameter combinations for which the model must be run.
         parameter_combinations = self.generate_run_matrix()
-#         print(parameter_combinations)
+        print(parameter_combinations)
         
         # determine how many times parallelization of cores must be repeated to complete runs
         total_runs = len(parameter_combinations)
