@@ -42,6 +42,7 @@ class ModelExplorerMP:
         index_2 = self.num_cores
         outputs_all = []
         print("i am outside of the main function.")
+        print('Name is set to {}'.format(__name__))
         for i in range(num_cycles):
             if __name__ == '__main__':
                 print("i got to the main function.")

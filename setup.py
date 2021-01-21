@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mesaModelAssistant',
-    version='0.0.2',
+    version='0.0.3',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='A package containing helper classes for batchruning agent-based models implemented in mesa.',
