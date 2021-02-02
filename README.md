@@ -34,4 +34,4 @@ The method will return all data collected by the DataCollector() object defined 
 param_exploration_results = batchrunner.schedule_run_all_param_combinations()
 ```
 
-For a tutorial on how to implement an ABM in mesa and use the ModelExplorerMP module to explore the ABM parameter space, visit the [MesaModelExplorerMP-tutorial] (MesaModelExplorerMP-Tutorial.ipynb).
+For a tutorial on how to implement an ABM in mesa and use the ModelExplorerMP module to explore the ABM parameter space, visit the [MesaModelExplorerMP-tutorial] (https://github.com/nikita-sivakumar/mesa-model-assistant/blob/master/ModelExplorerMP-Tutorial.ipynb).
