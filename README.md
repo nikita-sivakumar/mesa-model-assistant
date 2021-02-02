@@ -18,7 +18,7 @@ To use ModelExplorerMP import the module as follows:
 
 Instantiate a ModelExplorerMP object as follows:
 
-<div>
+<div  css= "{white-space: pre; }">
   <code>
     batchrunner  = mp.ModelExplorerMP(model_cls= class in which model is defined,
                                                       num_cores= number of cores over which you want to parallelize the batchrunner,
