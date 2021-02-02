@@ -12,9 +12,9 @@ Since agent-based models (ABMs) are inherently stochastic a given parameter comb
 
 To use ModelExplorerMP import the module as follows:
 
-<code>
+```
   from mesaModelAssistant import ModelExplorerMP as mp
-</code>
+```
 
 Instantiate a ModelExplorerMP object as follows:
 
