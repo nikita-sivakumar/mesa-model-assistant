@@ -20,11 +20,11 @@ Instantiate a ModelExplorerMP object as follows:
 
 ```
 batchrunner = mp.ModelExplorerMP(model_cls= class in which model is defined,
-                              num_cores= number of cores over which you want to parallelize the batchrunner,
-                              variable_parameters = dictionary of variable parameters,
-                              fixed_parameters = dictionary of fixed parameters,
-                              iterations = number of times each parameter combination should be run,
-                              max_steps = number of steps each model should be run to)
+                                            num_cores= number of cores over which you want to parallelize the batchrunner,
+                                            variable_parameters = dictionary of variable parameters,
+                                            fixed_parameters = dictionary of fixed parameters,
+                                            iterations = number of times each parameter combination should be run,
+                                            max_steps = number of steps each model should be run to)
 ```
 
 To run each parameter combination use the `schedule_run_all_param_combinations()` method.
