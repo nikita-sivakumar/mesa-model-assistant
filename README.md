@@ -19,10 +19,19 @@ To use ModelExplorerMP import the module as follows:
 Instantiate a ModelExplorerMP object as follows:
 
 ```
-    batchrunner  = mp.ModelExplorerMP(model_cls= class in which model is defined,
-                                                      num_cores= number of cores over which you want to parallelize the batchrunner,
-                                                      variable_parameters = dictionary of variable parameters,
-                                                      fixed_parameters = dictionary of fixed parameters,
-                                                      iterations = number of times each parameter combination should be run,
-                                                      max_steps = number of steps each model should be run to)
+batchrunner = mp.ModelExplorerMP(model_cls= class in which model is defined,
+                              num_cores= number of cores over which you want to parallelize the batchrunner,
+                              variable_parameters = dictionary of variable parameters,
+                              fixed_parameters = dictionary of fixed parameters,
+                              iterations = number of times each parameter combination should be run,
+                              max_steps = number of steps each model should be run to)
 ```
+
+To run each parameter combination use the `schedule_run_all_param_combinations()` method.
+The method will return all data collected by the DataCollector() object defined in model_cls for each parameter combination overtime, in the form of a list of dictionaries, in which the key is the parameter combination and iteration and the value is the returned data frame. You may analyze this data however you please :)
+
+```
+param_exploration_results = batchrunner.schedule_run_all_param_combinations()
+```
+
+For a tutorial on how to implement an ABM in mesa and use the ModelExplorerMP module to explore the ABM parameter space, visit the [MesaModelExplorerMP-tutorial] (MesaModelExplorerMP-Tutorial.ipynb).
